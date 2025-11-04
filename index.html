@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style data-styles> ion-icon{visibility: hidden}.hydrated{visibility: inherit}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!--
+    - primary meta tags
+    -->
+
+    <title>Oddly - Odd blog</title>
+    <meta name="title" content="Oddelles blog and coding projects">
+    <meta name="description" content="Practicing JavaScript by creating a website">
+
+  <!--
+   - Favicon
+  -->
+   <link rel="shortcut icon" href="./assets/favicon.svg" type="image/svg+xml" />
+
+ <!--
+ - google font link
+ -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+ rel="stylesheet">
+
+ <!--
+ - custom css link
+ -->
+ <link rel="stylesheet" href="./assets/css/style.css">
+
+ <!--
+ - preload images
+ -->
+
+ <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+ <link rel="preload" as="image" href="./assets/images/pattern-2.svg">
+ <link rel="preload" as="image" href="./assets/images/pattern-3.svg">
+
+
+
+
+
+
+</head>
+
+<body id="top" class="nav-active">
+    
+  <!--
+    - #HEADER  
+  -->
+
+    <header class="header" data-header>
+     <div class="container">
+
+       <a href="#" class="logo">
+         <img src="./assets/images/logo.png" width="119" height="37" alt="Oddly logo">
+        </a> 
+
+        <nav class="navbar active" data-navbar>
+
+          <div class="navbar-top">
+           <a href="#" class="logo">
+             <img src="./assets/images/logo.png" width="150" height="50" alt="Oddly logo">
+           </a> 
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+          </div>
+
+          <ul class="navbar-list">
+
+           <li>
+             <a href="#home" class="navbar-link hover-1" data-nav-toggler>Home</a>
+           </li>
+
+           <li>
+             <a href="#topics" class="navbar-link hover-1" data-nav-toggler>Topics</a>
+           </li>
+
+           <li>
+             <a href="#featured" class="navbar-link hover-1" data-nav-toggler>Featured Post</a>
+           </li>
+
+           <li>
+             <a href="#recent" class="navbar-link hover-1" data-nav-toggler>Recent Posts</a>
+           </li>
+
+           <li>
+            <a href="#footer" class="navbar-link hover-1" data-nav-toggler>Contact</a>
+          </li>
+                    
+          </ul>
+
+          <div class="navbar-bottom">
+            
+            <div class="profile-card">
+             <img src="./assets/images/author-2.png" width="48" height="48" alt="Oddelle"
+             class="profile-banner">
+  
+              <div>
+               <p class="card-title">Howdy Oddelle !</p>
+
+               <p class="card-subtitle"> 
+                You might have new messages
+               </p>
+              </div>
+             </div>
+
+              
+           <ul class="link-list">
+
+             <li>
+               <a href="#" class="navbar-bottom-link hover-1">Profile</a>
+             </li>
+             
+             <li>
+               <a href="#" class="navbar-bottom-link hover-1">Articles Saved</a>
+             </li>
+             
+             <li>
+               <a href="#" class="navbar-bottom-link hover-1">Add New Post</a>
+             </li>
+
+             <li>
+              <a href="#" class="navbar-bottom-link hover-1">My Likes</a>
+             </li>
+            
+             <li>
+              <a href="#" class="navbar-bottom-link hover-1">Account Settings</a>
+             </li>
+            
+             <li>
+               <a href="#" class="navbar-bottom-link hover-1">Sign Out</a>
+             </li>
+
+           </ul>
+            
+          </div>
+
+          <p class="copyright-text">
+            Copyright 2025 @ Oddly - Personal Blog Template.
+            Developed by Oddelle
+          </p>
+
+        </nav>
+
+       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" role="img" class="md hydrated">
+          #shadow-root (open)
+        </ion-icon>
+       </button>
+
+     </div>  
+    </header>
+
+ 
+
+
+   <main>
+     <article>
+
+      <!--
+       - #HERO 
+      -->
+
+      <section class="hero" id="home" aria-label="home">
+       <div class="container">
+
+        <div class="hero-content">
+
+          <p class="hero-subtitle">Howdy!</p>
+           <h1 class="headline headline-1 section-title">
+            I'm <span class="span">Oddelle</span>
+           </h1>
+          
+          <p class="hero-text">
+            I've just started learning JavaScript.
+          </p>
+
+          <div class="input-wrapper">
+
+            <input type="email" name="email_address" placeholder="Write your email here" 
+            required
+            class="input-field">
+
+            <button class="btn btn-primary">
+             <span class="span">Subscribe</span>
+             
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="hero-banner">
+
+          <img src="./assets/images/hero-banner.png" width="327" height="490" alt="Oddelle" class="w-100">
+
+          <img src="./assets/images/Blue_Chicken.png" width="27" height="26" alt="shape" class="shape shape-1">
+
+          <img src="./assets/images/Crow.png" width="27" height="26" alt="shape" class="shape shape-2">
+
+        </div>
+
+       </div>
+      </section>
+
+
+
+
+
+
+      <!--
+      - #TOPICS
+      -->
+
+      <section class="topics" id="topics" aria-labelledby="topic-label">
+        <div class="container">
+
+          <div class="card topic-card">
+
+            <div class="card-content">
+
+              <h2 class="headline headline-2 section-title card-title" id="topic-label">
+                The story so far
+              </h2>
+              
+              <p class="card-text">
+                My latest programming attempts and interests
+              </p>
+
+              <div class="btn-group">
+                <button class="btn-icon" aria-label="previous" data-slider-prev>
+                  <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                </button>
+
+                <button class="btn-icon" aria-label="next" data-slider-next>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+              
+              <div class="slider" data-slider>
+                <ul class="slider-list" data-slider-container>
+
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+
+                      <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                        <img src="./assets/images/topic-1.png" width="507" height="618" loading="lazy" alt="My projects" class="img-cover">
+                      </figure>
+
+                      <div class="slider-content">
+                        <span class="slider-title">My projects</span>
+
+                        <p class="slider-subtitle">What I've achieved so far</p>
+                      </div>
+
+                    </a>
+                  </li>
+
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+
+                      <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                        <img src="./assets/images/topic-2.png" width="507" height="618" loading="lazy" alt="Video games" class="img-cover">
+                      </figure>
+
+                      <div class="slider-content">
+                        <span class="slider-title">Video games</span>
+
+                        <p class="slider-subtitle">What I play</p>
+                      </div>
+
+                    </a>
+                  </li>
+
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+
+                      <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                        <img src="./assets/images/topic-3.png" width="507" height="618" loading="lazy" alt="Artsy" class="img-cover">
+                      </figure>
+
+                      <div class="slider-content">
+                        <span class="slider-title">Artsy</span>
+
+                        <p class="slider-subtitle">Stuff I like</p>
+                      </div>
+
+                    </a>
+                  </li>
+
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+
+                      <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                        <img src="./assets/images/topic-4.png" width="507" height="618" loading="lazy" alt="Why are you here?" class="img-cover">
+                      </figure>
+
+                      <div class="slider-content">
+                        <span class="slider-title">Why are you here?</span>
+
+                        <p class="slider-subtitle">Tell me</p>
+                      </div>
+
+                    </a>
+                  </li>
+
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+
+                      <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                        <img src="./assets/images/topic-5.png" width="507" height="618" loading="lazy" alt="My pets" class="img-cover">
+                      </figure>
+
+                      <div class="slider-content">
+                        <span class="slider-title">My pets</span>
+
+                        <p class="slider-subtitle">The pets I've had so far</p>
+                      </div>
+
+                    </a>
+                  </li>
+
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+
+                      <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                        <img src="./assets/images/topic-6.png" width="507" height="618" loading="lazy" alt="Me" class="img-cover">
+                      </figure>
+
+                      <div class="slider-content">
+                        <span class="slider-title">Me</span>
+
+                        <p class="slider-subtitle">It's a me</p>
+                      </div>
+
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+      - #FEATURED POST
+      -->
+
+      <section class="section feature" aria-label="feature" id="featured">
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title">
+            <span class="span">Picked by the creator</span>
+          </h2>
+
+          <p class="section-text">
+            Check out what my interests are
+          </p>
+
+          <ul class="feature">
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/featured-1.png" width="1602" height="903" loading="lazy" alt="Follow the Light" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#My pets</a>
+
+                      <a href="#" class="span hover-2">#Light</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <span class="span">Mostly pictures</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      This is my doggo Light
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="./assets/images/author-2.png" width="48" height="48" loading="lazy" alt="Oddelle" class="profile-banner">
+                     <div>
+                      <p class="card-title">Oddelle</p>
+
+                      <p class="card-subtitle"> 08.02.2025</p>
+                     </div>
+                    </div>
+                    
+                    <a href="#" class="card-btn">View more</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/featured-2.png" width="1602" height="903" loading="lazy" alt="Pokemon" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Video games</a>
+
+                      <a href="#" class="span hover-2">#Pokemon</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <span class="span">Mostly pictures</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Pokemon HGSS
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="./assets/images/author-2.png" width="48" height="48" loading="lazy" alt="Oddelle" class="profile-banner">
+                     <div>
+                      <p class="card-title">Oddelle</p>
+
+                      <p class="card-subtitle"> 08.02.2025</p>
+                     </div>
+                    </div>
+                    
+                    <a href="#" class="card-btn">View more</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/featured-3.png" width="1602" height="903" loading="lazy" alt="Stardew Valley" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Video games</a>
+
+                      <a href="#" class="span hover-2">#Stardew Valley</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <span class="span">Mostly pictures</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Stardew Valley Expanded
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="./assets/images/author-2.png" width="48" height="48" loading="lazy" alt="Oddelle" class="profile-banner">
+                     <div>
+                      <p class="card-title">Oddelle</p>
+
+                      <p class="card-subtitle"> 08.02.2025</p>
+                     </div>
+                    </div>
+                    
+                    <a href="#" class="card-btn">View more</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-primary">
+            <span class="span">Show more</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+
+        <img src="./assets/images/shadow-3.svg" width="500" height="1500" loading="lazy" alt="" class="feature-bg">
+
+      </section>
+
+
+
+
+
+      <!--
+      - #POPULAR TAGS
+      -->
+
+      <section class="tags" aria-labelledby="tag-label">
+        <div class="container">
+
+         <h2 class="headline headline-2 section-title" id="tag-label">
+          <span class="Popular Tags"></span>
+         </h2>
+
+         <p class="section-text">
+          My free time activities are usually related to these topics:
+         </p>
+
+         <ul class="grid-list">
+
+          <li>
+            <button class="card tag-btn">
+              <img src="./assets/images/tag1.png" width="32" height="32" loading="lazy" alt="Pets">
+            
+              <p class="btn-text">Pets</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="./assets/images/tag2.png" width="32" height="32" loading="lazy" alt="Pokemon">
+            
+              <p class="btn-text">Pokemon</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="./assets/images/tag3.png" width="32" height="32" loading="lazy" alt="Watching">
+            
+              <p class="btn-text">Watching</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="./assets/images/tag4.png" width="32" height="32" loading="lazy" alt="Video games">
+            
+              <p class="btn-text">Video games</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="./assets/images/tag5.png" width="32" height="32" loading="lazy" alt="Phone apps">
+            
+              <p class="btn-text">Phone apps</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="./assets/images/tag6.png" width="32" height="32" loading="lazy" alt="Music">
+            
+              <p class="btn-text">Music</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="./assets/images/tag7.png" width="32" height="32" loading="lazy" alt="Chicken">
+            
+              <p class="btn-text">Chicken</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="./assets/images/tag8.png" width="32" height="32" loading="lazy" alt="Food">
+            
+              <p class="btn-text">Food</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="./assets/images/tag9.png" width="32" height="32" loading="lazy" alt="Plants">
+            
+              <p class="btn-text">Plants</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="./assets/images/tag10.png" width="32" height="32" loading="lazy" alt="Walking">
+            
+              <p class="btn-text">Walking</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="./assets/images/tag11.png" width="32" height="32" loading="lazy" alt="Animals">
+            
+              <p class="btn-text">Animals</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="./assets/images/tag12.png" width="32" height="32" loading="lazy" alt="Drinks">
+            
+              <p class="btn-text">Drinks</p>
+            </button>
+          </li>
+
+         </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+       - #RECENT POST
+      -->
+
+      <section class="section recent-post" id="recent" aria-labelledby="recent-label">
+        <div class="container">
+
+          <div class="post-main">
+
+            <h2 class="headline headline-2 section-title">
+              <span class="span">Recent posts</span>
+            </h2>
+
+            <p class="section-text">
+              I'll be honest, it's mostly pictures
+            </p>
+
+            <ul class="grid-list">
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 300; --height: 400;">
+                    <img src="./assets/images/recent-post-1.png" width="300" height="400" loading="lazy" alt="His name is Light" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">A good boy</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Light the samoyed</a>
+                    </h3>
+
+                    <p class="card-text">
+                      This is my dog Light. He is a samoyed. Born and raised in Slovenia from the year 2015.
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Pets</a>
+
+                        <a href="#" class="span hover-2"># Animals</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <span class="span">A few pictures</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 192; --height: 108;">
+                    <img src="./assets/images/recent-post-2.png" width="192" height="108" loading="lazy" alt="Stardew Valley Expanded" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">My current favourite game</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Stardew Valley Expanded</a>
+                    </h3>
+
+                    <p class="card-text">
+                      I really love this cozy game
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Video games</a>
+
+                        <a href="#" class="span hover-2"># Phone apps</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <span class="span">Not a particularly long post</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+              
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 460; --height: 215;">
+                    <img src="./assets/images/recent-post-3.png" width="460" height="215" loading="lazy" alt="Blazing Beaks" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">One of my other favourite games</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Blazing Beaks</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Fun little top-down shooter with pixel graphics
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Video games</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <span class="span">Not a particularly long post</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <nav aria-label="pagination" class="pagination">
+
+              <a href="#" class="pagination-btn" aria-label="previous page">
+                <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+              </a>
+
+              <a href="#" class="pagination-btn">1</a>
+              <a href="#" class="pagination-btn">2</a>
+              <a href="#" class="pagination-btn">3</a>
+              <a href="#" class="pagination-btn" aria-label="more page">...</a>
+
+              <a href="#" class="pagination-btn" aria-label="next page">
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+
+            </nav>
+
+          </div>
+
+          <div class="post-aside grid-list">
+
+            <div class="card aside-card">
+
+              <h3 class="headline headline-3 aside-title">
+                <span class="span">Popular posts</span>
+              </h3>
+              
+              <ul class="popular-list">
+
+               <li>
+                <div class="popular-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 190;">
+                    <img src="./assets/images/popular-post-1.png" width="271" height="190" loading="lazy" alt="Pokemon HGSS" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <h4 class="headline headline-4 card-title">
+                      <a href="#" class="link hover-2">Pokemon HGSS</a>
+                    </h4>
+
+                    <div class="wrapper">
+                      <p class="card-subtitle">Not a particularly long post</p>
+
+                      <time class="publish-date" datetime="2025-02-08">08. February 2025</time>
+                    </div>
+
+                  </div>
+
+                </div>
+               </li>
+
+               <li>
+                <div class="popular-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 190;">
+                    <img src="./assets/images/popular-post-2.png" width="271" height="190" loading="lazy" alt="Light" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <h4 class="headline headline-4 card-title">
+                      <a href="#" class="link hover-2">Light</a>
+                    </h4>
+
+                    <div class="wrapper">
+                      <p class="card-subtitle">Not a particularly long post</p>
+
+                      <time class="publish-date" datetime="2025-02-08">08. February 2025</time>
+                    </div>
+
+                  </div>
+
+                </div>
+               </li>
+
+              </ul>
+
+            </div>
+
+            <div class="card aside-card">
+
+              <h3 class="headline headline-2 aside-title">
+                <span class="span">Comments</span>
+              </h3>
+
+              <ul class="comment-list">
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class=" card-text">
+                      "no comments so far"
+                    </blockquote>
+
+                    <div class="profile-card">
+                      <figure class="profile-banner img-holder">
+                        <img src="./assets/images/author-2.png" width="32" height="32" loading="lazy" alt="Oddly">
+                      </figure>
+                      <div>
+                        <p class="card-title">Oddly</p>
+
+                        <time class="card-date" datetime="2025-02-08">08 February 2025</time>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+     </article>
+   </main>  
+
+
+
+
+ <!--
+   - #FOOTER
+   -->
+
+   <footer id="footer">
+    <div class="container">
+
+      <div class="card footer">
+         <div class="section footer-top">
+
+          <div class="footer-brand">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.png" width="119" height="37" loading="lazy" alt="logo">
+            </a>
+          
+          </div>
+
+         </div>
+
+         <div class="footer-list">
+
+          <p class="footer-list-title">Odd posts</p>
+
+          <p class="footer-text">
+            Sign up if you'd like to recieve updates.
+          </p>
+
+          <div class="input-wrapper">
+            <input type="text" name="name" placeholder="Your name" required class="input-field" autocomplete="off">
+
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <div class="input-wrapper">
+            <input type="email" name="email_address" placeholder="Email address" required class="input-field" autocomplete="off">
+
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <a href="#" class="btn btn-primary">
+            <span class="span">Subscribe</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+         </div>
+
+         <div class="footer-bottom">
+
+          <p class="copyright">
+            &copy; Developed by <a href="#" class="copyright-link">Oddelle</a>
+          </p>
+
+         </div>
+
+      </div>
+
+    </div>
+   </footer>
+
+
+
+   <!--
+   - #BACK TO TOP
+   -->
+
+   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+     <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+   </a>
+
+
+
+
+
+
+
+ <!--
+   - custom js link 
+ -->
+ <script src="./assets/js/script.js"></script>
+
+ <!--
+  - ionicon link
+ -->
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+</html>
